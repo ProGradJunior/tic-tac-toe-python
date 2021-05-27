@@ -29,24 +29,7 @@ def disableButton():
 
 
 
-def btnClick(buttons):
-    global bclick, flag, player2_name, player1_name, playerb, playera
-    if buttons["text"] == " " and bclick == True:
-        buttons["text"] = "X"
-        bclick = False
-        playerb = p2.get() + " Wins!"
-        playera = p1.get() + " Wins!"
-        checkForWin()
-        flag += 1
 
-
-    elif buttons["text"] == " " and bclick == False:
-        buttons["text"] = "O"
-        bclick = True
-        checkForWin()
-        flag += 1
-    else:
-        tkinter.messagebox.showinfo("Tic-Tac-Toe", "Button already Clicked!")
 
 
 
